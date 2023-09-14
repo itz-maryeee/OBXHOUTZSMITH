@@ -7,10 +7,25 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
-    font-family: 'Barlow Semi Condensed', sans-serif;    
     color: #1e1e1e;
 }
 
+ #btn-blue{
+    background-color: #368aff;
+    padding: 8px 25px;
+    border-radius: 30px;
+    color: #fff;
+}
+.title{
+    font-size: 40px;
+    color: #1e1e1e;
+}
+.title-white{
+    font-size: 40px;
+    color: #fff;
+}
+
+/* navbar */
 .nav-item .nav-link{
     font-size: 18px;
     font-weight: 500;
@@ -19,14 +34,6 @@
 
     margin-left: 50px;
 }
- #btn-blue{
-    background-color: #368aff;
-    padding: 8px 25px;
-    border-radius: 30px;
-    color: #fff;
-    }
-
-/* navbar */
 #navbar{
     border: 2px solid red;
 
@@ -74,3 +81,113 @@
             color: #fff;
             }
     }
+
+    
+
+/* hero section */
+.heroWrapper{
+    /* border: 2px solid red; */
+
+    width: 100%;
+}
+    .img-bg{
+        /* border: 2px solid red; */
+        position: relative;
+    }
+    .title-text{
+        padding-inline: 5rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 40%;
+    }
+        .hero-title{
+            /* border: 2px solid red; */
+
+            width: 514px;
+            color: #fff;
+            text-shadow: 1px 1px 2px #000000;
+            font-size: max(1rem,5vh,3rem);
+            line-height: 1;
+        }
+        .buttons{
+            /* border: 2px solid red; */
+            margin-top: 3%;
+        }
+        .buttons a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+/* About us */
+.about{
+    /* border: 2px solid red; */
+
+    height: 650px;
+    padding-block: 3em;
+    padding-inline: 3rem;
+    color: #1e1e1e;
+}
+    .about-row{
+        /* border: 2px solid green; */
+    }
+    .about-col{
+        /* border: 1px solid blue; */
+    }
+        .about-col img{
+            padding: 1rem 2rem;
+        }
+        .innerCol{
+            padding: 1rem 2rem;
+        }
+            .hr{
+                height: 5px;
+                width: 100px;
+                background: #368aff;
+            }
+            .paragraph-body{
+                font-family: 'Barlow Semi Condensed', sans-serif;    
+                font-size: 20px;
+            }
+
+.full-width-bg-blue{
+    /* border: 2px solid red; */
+
+    height: 650px;
+    padding-block: 3em;
+    padding-inline: 3rem;
+    color: #1e1e1e;
+    background: #368aff;
+}
+    .row-bg-blue
+    {
+        position: relative;
+    }
+    .items{
+        /* border: 2px solid #1e1e1e; */
+    }
+    .items .img-bg{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all ease-out .3s;
+    }   
+        .img-text{
+            width: 320px;
+            font-size: 48px;
+            line-height: 1.1;
+            color: #fff;
+            text-shadow: 2px 2px 2px #000000;
+            display: block;
+
+            position: absolute;
+            bottom: 0;
+            padding: 0 2%;
+        }
