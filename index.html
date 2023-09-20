@@ -81,7 +81,7 @@
         <div class="buttons">
           <a href="#" >
             Know More 
-            <span><svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span class="ms-1"><svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7.2111 6.85764L0.778339 1.69161C0.468093 1.44245 0.468093 1.03851 0.778339 0.789389L1.52862 0.186858C1.83834 -0.0618688 2.3403 -0.0623475 2.65074 0.185794L7.77284 4.27996L12.8949 0.185794C13.2054 -0.0623475 13.7073 -0.0618688 14.017 0.186858L14.7673 0.789389C15.0776 1.03854 15.0776 1.44248 14.7673 1.69161L8.33458 6.85764C8.02434 7.10676 7.52135 7.10676 7.2111 6.85764Z" fill="white"/>
             </svg>
             </span>
@@ -93,21 +93,14 @@
   </section>
 
 
-
-
-
-
-
-
-
-  <!-- About Us
+  <!-- About Us -->
   <section class="about">
     <div class="row about-row">
-      <div class="col-5 about-col">
-        <img src="/assets/airbnb.jpg" alt="about us" width="500px" height="500px">
+      <div class="col-sm col-lg-6 about-col d-flex justify-content-center">
+        <img src="/assets/airbnb.jpg" alt="about us">
       </div>
 
-      <div class="col-7 about-col">
+      <div class="col-sm col-lg about-col">
         <div class="innerCol">
             <div class="title fw-semibold">ABOUT US</div>
             <div class="hr mt-1"></div>
@@ -122,71 +115,75 @@
         </div>
       </div>
     </div>
-  </section>-->
+  </section>
 
+  <section class="bg-blue container-fluid mt-2">
 
-  <section class="full-width-bg-blue">
+        <div class="d-flex mb-5 grid-holder">
+          <div class="txt-white mx-auto fw-medium">OUR SERVICES</div>
+        </div>
 
-    <div class="d-flex">
-      <div class="title-white mx-auto mb-5 fw-medium">OUR SERVICES</div>
-    </div>
+        <!-- GRID 
+          col-lg-auto col-md-6 col-sm-12
+        
+        -->
+        <div class="row g-2" >
 
-    <div class="rows-section row justify-content-md-center align-items-lg-center gap-3">
+          <div class="col-sm d-flex justify-content-center align-items-center">
+              <div class="items" style="
 
-      <div class="items col-sm col-md-auto" style="
-        min-height: 400px;
-        min-width:  29vw;
-        background-image:url('/assets/cleaning-laptop.webp');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-origin: padding-box;
-        background-position: center;
-        position: relative;">
+              background-image:url('/assets/cleaning-laptop.webp');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+              position: relative;">
+                <p class="img-text fw-bolder ms-2">Air BnB Cleaning</p>
+            </div>
+          </div>
 
-        <p class="img-text fw-bolder">Air BnB Cleaning</p>
-      </div>  
+          <div class="col-sm d-flex justify-content-center align-items-center">
+            <div class="items" style="
 
-      <div class="items col-sm col-md-auto" style="
-        min-height: 400px;
-        min-width:  29vw;
-        background-image:url('/assets/vacum-cleaning.webp');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-origin: padding-box;
-        background-position: center;
-        position: relative;">
+              background-image:url('/assets/vacum-cleaning.webp');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+              position: relative;">
+    
+              <p class="img-text fw-bolder ms-2">House
+                Cleaning</p>
+            </div>
+          </div>
 
-        <p class="img-text fw-bolder">House Cleaning</p>
-      </div>  
+          <div class="col-sm d-flex justify-content-center align-items-center">
+            <div class="items" style="
 
-      <div class="items col-sm col-md-auto" style="
-        min-height: 400px;
-        min-width:  29vw;
-        background-image:url('/assets/woman-cleaning-the-house.webp');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-origin: padding-box;
-        background-position: center;
-        position: relative;">
+              background-image:url('/assets/woman-cleaning-the-house.webp');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+              position: relative;">
+    
+              <p class="img-text fw-bolder ms-2">Cottages
+                Cleaning</p>
+            </div>
+          </div>
+        
+        </div>
 
-        <p class="img-text fw-bolder">Air BnB Cleaning</p>
-      </div>  
+  </section>
 
-
-
-
-
-    </div>
-
+  <section class="p-5 container d-flex flex-column justify-content-center align-items-center mt-5">
+    <h1 class="intro-text w-50 text-center">
+      Your <span class="text-yellow text-decoration-underline">One Call Away</span>
+      Cleaning Service.
+    </h1>
+    <a class="nav-link text-center mt-4 fw-bolder" id="btn-yellow" href="#">BOOK NOW</a>
 
   </section>
 
 
-
-
-
-
-
+  <section class="bg-blue mt-5"></section>
 
 
 
