@@ -22,32 +22,36 @@
 
  #btn-blue{
     background-color: #368aff;
-    padding: 4px 25px;
+    padding: 6px 24px;
     border-radius: 30px;
     color: #fff;
+    font-size: 12px;
+    margin-top: 8px;
+
 }
 #btn-yellow{
     background-color: #FFDE59;
-    padding: 4px 25px;
+    padding: 6px 24px;
     border-radius: 30px;
     color: #1e1e1e;
+    font-size: 12px;
 }
 
 
 .title{
-    font-size: 20px;
+    font-size: 32px;
     color: #1e1e1e;
 }
 .intro-text{
-    font-size: 20px;
+    font-size: 24px;
     color: #1e1e1e;
 }
 .title-white{
-    font-size: 34px;
+    font-size: 20px;
     color: #fff;
 }
 .text-yellow{
-    font-size: 20px;
+    font-size: 24px;
     color: #FFDE59;
 }
     @media screen and (min-width:996px) {
@@ -72,12 +76,16 @@
             padding: 8px 30px;
             border-radius: 30px;
             color: #fff;
+            font-size: 16px;
+            margin-top: 0;
+
         }
         #btn-yellow{
             background-color: #FFDE59;
             padding: 8px 30px;
             border-radius: 30px;
             color: #1e1e1e;
+            font-size: 16px;
         }
 
     }
@@ -142,6 +150,7 @@
 .heroWrapper{
     /* border: 2px solid red; */
     position: relative;
+    overflow: hidden;
 }
 
     .title-text{
@@ -216,17 +225,12 @@
     height: 100%;
     padding-block: 2rem;
     padding-inline: 1rem;
+    overflow: hidden;
 }
     img{
         width: 400px; 
         height:400px;
     }
-    /* .about-row{
-        border: 2px solid green;
-    } */
-    /* .about-col{
-        border: 1px solid blue;
-    } */
         .about-col img{
             padding: 1rem 2rem;
         }
@@ -244,7 +248,7 @@
             }
             .paragraph-body{
                 font-family: 'Barlow Semi Condensed', sans-serif;    
-                font-size: 20px;
+                font-size: 12px;
             }
     
 @media screen and (min-width:965px) {
@@ -255,23 +259,17 @@
     padding-block: 3em;
     padding-inline: 3rem;
     color: #1e1e1e;
+    overflow: hidden;
+
     }
         img{
             width: 500px; 
             height:500px;
         }
-        /* .about-row{
-            /* border: 2px solid green; *
-        } */
-        /* .about-col{
-            /* border: 1px solid blue; *
-        } */
             .about-col img{
                 padding: 1rem 2rem;
             }
-                /* .innerCol{
-                    padding: .5rem 2rem;
-                } */
+
                 .title{
                     font-size: 64px;
                     color: #1e1e1e;
@@ -294,18 +292,29 @@
     height: 100%;
     color: #1e1e1e;
     background: #368aff;
-    padding: 3rem 1rem 5rem 1rem;
+    padding: 3rem auto 5rem auto;
+    overflow: hidden;
+
 }
     .txt-white{
         font-size: 20px;
         color: #fff;
     }
-
-        .items{
-            height: 200px;
-            width: 200px;
+    .service-section{
+        display: grid;
+        /* grid-auto-flow: row; */
+        gap:1rem;
+    }
+    .card{
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        position: relative;
+    }
+        .card-img-top{
+            object-fit: cover;
+            object-position: center;
         }
-
         .img-text{
             /* border: 2px solid green; */
 
@@ -321,40 +330,100 @@
             bottom: -20px;
         } 
 
-@media screen and (min-width:950px) {
+@media screen and (min-width:998px) {
     .bg-blue{
         /* border: 2px solid red; */
     
         height: 100%;
         color: #1e1e1e;
         background: #368aff;
-        padding: 3rem 1rem 5rem 1rem;
+        padding: 3rem 3rem 5rem 3rem;
+        overflow: hidden;
+
     }
         .txt-white{
             font-size: 40px;
             color: #fff;
         }
-        #grid-holder{
-            /* border: 2px solid yellow; */
-        }
-            .items{
-                height: 300px;
-                width:  300px;
+            .service-container{
+
             }
-            .img-text{
-                /* border: 2px solid green; */
-        
-                width: 220px;
-                height: 110px;
-        
-                font-size: 2.8rem;
-                line-height: 1.1;
-                color: #fff;
-                text-shadow: 2px 2px 2px #000000;
-        
-                position: absolute;
-                bottom: -10px;
-            } 
+            .service-section{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                /* grid-auto-flow: column; */
+            }
+            .card{
+                height: auto;
+                width: auto;
+                box-shadow: 0 5px 10px rgba(0,0,0,.2);
+                position: relative;
+            }
+                .card-img-top{
+                    object-fit: cover;
+                    object-position: center;
+                }
+                .img-text{
+                    /* border: 2px solid green; */
+            
+                    width: 200px;
+                    height: 110px;
+            
+                    font-size: 2.8rem;
+                    line-height: 1.1;
+                    color: #fff;
+                    text-shadow: 2px 2px 2px #000000;
+            
+                    position: absolute;
+                    bottom: -10px;
+                } 
 }
 
 
+.OCA-section{
+   margin-block: 1rem;     
+}
+.footer{
+    height: 100%;
+    color: #1e1e1e;
+    background: #E4F0FF;
+    padding: 5rem 1rem 5rem 1rem;
+    overflow: hidden;
+}
+.blue-bg{
+    /* border: 2px solid red; */
+
+    height: 100%;
+    color: #1e1e1e;
+    background: #368aff;
+    padding: 1rem 1rem 1rem 1rem;
+    overflow: hidden;
+    font-size: 12px;
+
+}
+
+
+
+@media screen and (min-width:950px) {
+    .OCA-section{
+        margin-block: 5rem;     
+     }
+    .footer{
+        height: 100%;
+        color: #1e1e1e;
+        background: #E4F0FF;
+        padding: 5rem 1rem 5rem 1rem;
+        overflow: hidden;
+    }
+    .blue-bg{
+        /* border: 2px solid red; */
+    
+        height: 100%;
+        color: #1e1e1e;
+        background: #368aff;
+        padding: 1rem 1rem 1rem 1rem;
+        overflow: hidden;
+        font-size: 14px;
+
+    }
+}
