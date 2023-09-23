@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
 </head>
@@ -18,7 +19,7 @@
   <!-- navbar -->
   <nav id="navbar" class="navbar navbar-expand-md border border-bottom border-2 shadow-sm fixed-top">
     <div class="container-fluid" id="nav-container">
-      
+        <!-- brand logo -->
         <a class="navbar-brand" href="index.html"><img src="/assets/logo.webp" id="img-logo">
         </a>
 
@@ -42,12 +43,14 @@
             <a class="nav-link" href="#">SERVICES</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#">WHAT WE DO?</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">CONTACT</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-center" id="btn-blue" href="#">BOOK NOW</a>
           </li>
-
         </ul>
       </div>
     </div>
@@ -55,7 +58,7 @@
 
 
   <section class="heroWrapper">
-
+      <!-- img background -->
       <div
       style="
       width: 100%;
@@ -71,20 +74,26 @@
       >
       </div>
 
-      <div class="title-text">
+      <div class="title-text-wrap">
 
-        <div class=" fw-bold "><p class="text-wrap hero-title">
+        <div class="fw-bold ">
+          <p class="text-wrap hero-title">
           We clean straight away.
-        </p>
+          </p>
         </div>
 
-        <div class="buttons mt-5">
-          <a href="#" >
-            Know More 
-            <span class="ms-1"><svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7.2111 6.85764L0.778339 1.69161C0.468093 1.44245 0.468093 1.03851 0.778339 0.789389L1.52862 0.186858C1.83834 -0.0618688 2.3403 -0.0623475 2.65074 0.185794L7.77284 4.27996L12.8949 0.185794C13.2054 -0.0623475 13.7073 -0.0618688 14.017 0.186858L14.7673 0.789389C15.0776 1.03854 15.0776 1.44248 14.7673 1.69161L8.33458 6.85764C8.02434 7.10676 7.52135 7.10676 7.2111 6.85764Z" fill="white"/>
-            </svg>
-            </span>
+        <div class="buttons mt-4">
+          <a href="#about" >
+            <div class="d-flex flex-row gap-x-2 justify-content-center align-items-start ">
+              <p class="hero-text-white fw-medium sam ">
+                Know More
+              </p> 
+                <span class="ms-2 hero-text-white sam"><svg width="15" height="10" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.2111 6.85764L0.778339 1.69161C0.468093 1.44245 0.468093 1.03851 0.778339 0.789389L1.52862 0.186858C1.83834 -0.0618688 2.3403 -0.0623475 2.65074 0.185794L7.77284 4.27996L12.8949 0.185794C13.2054 -0.0623475 13.7073 -0.0618688 14.017 0.186858L14.7673 0.789389C15.0776 1.03854 15.0776 1.44248 14.7673 1.69161L8.33458 6.85764C8.02434 7.10676 7.52135 7.10676 7.2111 6.85764Z" fill="white"/>
+                </svg>
+                </span>
+            </div>
+
           </a>
         </div> <!--end of buttons-->  
 
@@ -92,77 +101,198 @@
 
   </section>
 
-
   <!-- About Us -->
-  <section class="about">
-    <div class="row about-row">
-      <div class="col-sm col-lg-6 about-col d-flex justify-content-center">
-        <img src="/assets/airbnb.jpg" alt="about us">
+  <section class="about" id="about">
+
+    <div class="grid">
+
+      <div class="about-row row gap-3 gap-md-3 justify-content-center">
+
+        <!-- with image -->
+        <div class="about-col col-sm col-md-auto">
+          <div class="d-flex cole d-flex justify-content-center">
+            <img src="/assets/airbnb.jpg" alt="about us">
+          </div>
+        </div>
+
+        <!-- about us text article -->
+        <div class="about-col2 col-sm col-md-5">
+
+          <div class="innerCol">
+              <div class="about-title fw-semibold">ABOUT US</div>
+              <div class="hr mt-1"></div>
+              <div class="paragraph-body mt-4">
+                <p>A professional home cleaning service dedicated to making your life easier and your home cleaner. We take pride in our commitment to excellence and customer satisfaction. With a team of highly trained and experienced cleaning professionals, we aim to transform your living space into a clean and comfortable home.</p>
+              </div>
+              <div class="paragraph-body mt-4">
+                <p>
+                  At <strong>OBX HOUTZSMITH</strong>, our mission is simple yet profound – to enhance your quality of life by providing immaculate, hygienic, and organized environments. We believe that a clean space not only promotes physical well-being but also nurtures peace of mind and productivity.
+                </p>
+              </div>
+          </div> <!--end of innerCol-->
+
+        </div>
+
       </div>
 
-      <div class="col-sm col-lg about-col">
-        <div class="innerCol">
-            <div class="title fw-semibold">ABOUT US</div>
-            <div class="hr mt-1"></div>
-            <div class="paragraph-body mt-4">
-              <p>A professional home cleaning service dedicated to making your life easier and your home cleaner. We take pride in our commitment to excellence and customer satisfaction. With a team of highly trained and experienced cleaning professionals, we aim to transform your living space into a clean and comfortable home.</p>
-            </div>
-            <div class="paragraph-body mt-4">
-              <p>
-                At <strong>OBX HOUTZSMITH</strong>, our mission is simple yet profound – to enhance your quality of life by providing immaculate, hygienic, and organized environments. We believe that a clean space not only promotes physical well-being but also nurtures peace of mind and productivity.
-              </p>
-            </div>
-        </div>
-      </div>
     </div>
+
   </section>
 
-  <section class="bg-blue container-fluid mt-2">
+  <!-- blue background -->
+  <section class="bg-blue container-fluid">         
 
-        <div class="d-flex mb-5 grid-holder">
+        <div class="d-flex flex-column mb-2">
           <div class="txt-white mx-auto fw-medium">OUR SERVICES</div>
+        </div>
+        <div class="d-flex flex-column mb-5">
+          <div class="hr-yellow mx-auto"></div>
         </div>
 
         <!-- GRID         
         -->
-        
         <div class="service-container">
-          <div class="service-section justify-content-center">
-            <div class="card mb-5">
-              <img src="/assets/cleaning-laptop.webp" class="card-img-top" alt="...">
-              
-              <p class="img-text fw-bolder ms-2">Air BnB Cleaning</p>
-            </div>
-            <div class="card mb-5">
-              <img src="/assets/vacum-cleaning.webp" class="card-img-top" alt="vacum-cleaning">
-              <p class="img-text fw-bolder ms-2">House
-                Cleaning</p>
-            </div>
-            <div class="card mb-5">
-              <img src="/assets/woman-cleaning-the-house.webp" class="card-img-top" alt="...">
-              <p class="img-text fw-bolder ms-2">Cottages
-                Cleaning</p>
-            </div>
+          <!-- this is where the grid layout happens -->
+          <div class="service-holder grid">
+            <div class="row justify-content-sm-center gap-2 gap-md-3">
+                <div class="items col-sm col-lg-3">
+                  <div class="card">
+                    <img src="/assets/cleaning-laptop.webp" class="card-img-top" alt="...">
+                    <p class="img-text fw-bolder ms-2">Air BnB Cleaning</p>
+                  </div>
+                </div>
+                <div class="items col-sm col-lg-3">
+                  <div class="card">
+                    <img src="/assets/vacum-cleaning.webp" class="card-img-top" alt="vacum-cleaning">
+                    <p class="img-text fw-bolder ms-2">House
+                      Cleaning</p>
+                  </div>
+                </div>
+                <div class="items col-sm col-lg-3">
+                  <div class="card">
+                    <img src="/assets/woman-cleaning-the-house.webp" class="card-img-top" alt="...">
 
+                    <p class="img-text fw-bolder ms-2">Cottages
+                      Cleaning</p>
+                  </div>
+                </div>
+            </div>
           </div>
-
-        </div> <!--end of service section-->
-
+        </div>
   </section>
 
 
-
-  <section class="OCA-section p-5 container d-flex flex-column justify-content-center align-items-center">
-    <h1 class="intro-text w-50 text-center">
-      Your <span class="text-yellow text-decoration-underline">One Call Away</span>
-      Cleaning Service.
-    </h1>
-    <a class="text-center mt-4 fw-bolder" id="btn-yellow" href="#">BOOK NOW</a>
-
+  <!-- Call to Action Section -->
+  <section class="cta-section container-fluid">
+    <div class="container oca-holder">
+        <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+          <div class="oca-items">
+            <h1 class="intro-text text-center">
+              Your <span class="text-yellow text-decoration-underline">One Call Away</span> Cleaning Service.
+            </h1>
+          </div>
+          <div class="oca-items">
+            <a class="text-center mt-3 fw-semibold" id="btn-yellow" href="#">BOOK NOW</a>
+          </div>
+        </div>
+    </div>
   </section>
 
+  <!-- footer section -->
   <footer class="footer">
-
+    <div class="footer-container">
+      <div class="grid">
+        <div class="row-holder row gap-3">
+            <div class="col-items col">
+              <div class="footer-items">
+                    <div class="d-flex flex-column align-items-start">
+                      <span class="txt-title fw-semibold mb-1 ">Your trusted cleaning service.</span>  
+                      <a class="text-center mt-3 fw-semibold text-decoration-none" id="btn-yellow" href="#">BOOK NOW</a>
+                    </div>
+              </div>
+            </div>
+            <div class="col-items col">
+              <div class="footer-items">
+                <div class="d-flex flex-column">
+                  <span class="title fw-semibold mb-2">Our Company</span> 
+                      <a href="#" class="paragraph-body fw-medium text-decoration-none">
+                        <div class="d-flex flex-row align-items-start">
+                          <span class="material-symbols-outlined flex-shrink-0">
+                            home_pin
+                            </span>
+                          <p class="text-wrap ps-1">sample address st. here, Cebu City, Philippines, 6000</p> 
+                        </div>
+                      </a>
+                </div>
+              </div>            
+            </div>
+            <div class="col-items col">
+              <div class="footer-items">
+                <div class="d-flex flex-column">
+                  <span class="title fw-semibold mb-2">Contact Us</span> 
+                    <div class="phone-holder d-flex flex-row">
+                      <a href="#" class="paragraph-body fw-medium text-decoration-none">
+                        <div class="d-flex flex-row align-items-start">
+                          <span class="material-symbols-outlined">
+                            call
+                            </span>
+                        </div>
+                      </a>
+                      <a href="callto:000-000-000" class="paragraph-body fw-medium">
+                        <div class="d-flex flex-row align-items-start">
+                          <p class="text-wrap ps-1">
+                            +000-000-000
+                          </p> 
+                        </div>
+                      </a>
+                      <p class="paragraph-body ps-2">/</p>
+                      <a href="callto:000-000-000" class="paragraph-body fw-medium">
+                        <div class="d-flex flex-row align-items-start">
+                          <p class="text-wrap ps-1">
+                            +111-111-111
+                          </p> 
+                        </div>
+                      </a>
+                    </div>
+                    <!-- email -->
+                    <div class="email-holder d-flex flex-row">
+                      <a href="mailto:sample.email2023@gmail.com" class="paragraph-body fw-medium text-decoration-none">
+                        <div class="d-flex flex-row align-items-start">
+                          <span class="material-symbols-outlined">
+                            mail
+                          </span>
+                        </div>
+                      </a>
+                        <a href="mailto:sample.email2023@gmail.com" class="paragraph-body fw-medium">
+                          <div class="d-flex flex-row align-items-start">
+                            <p class="text-wrap ps-1">sample.email2023@gmail.com</p> 
+                          </div>
+                        </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-items col">
+              <div class="footer-items">
+                <div class="d-flex flex-column">
+                  <span class="title fw-semibold mb-2">Quick Links</span> 
+                      <a href="#" class="paragraph-body fw-medium text-decoration-none">
+                        About
+                      </a>
+                      <a href="#" class="paragraph-body fw-medium text-decoration-none">
+                        Services
+                      </a>
+                      <a href="#" class="paragraph-body fw-medium text-decoration-none">
+                        What we do?
+                      </a>
+                      <a href="#" class="paragraph-body fw-medium text-decoration-none">
+                        Contact
+                      </a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
   </footer>
 
   <footer class="blue-bg">
