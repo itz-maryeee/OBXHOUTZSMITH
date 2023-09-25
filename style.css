@@ -438,7 +438,31 @@
                 }
             }
 
+/* ------------------------------------carousel section */
+.carousel-inner{
+    height: 500px;
+    background-color: rgb(26, 105, 216,0.8);
+}
+    .imgCarousel{
+        height: 500px;
+        width: auto;
+        margin-inline: auto;
+        object-position: center;
+        object-fit: cover;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+        .carousel-caption{
+            margin-inline: auto;
+        }
+        .carousel-caption p{
+            color: #fff;
+            font-weight: 400;
+            padding: 0;
+        }
 
 /* -------------------------------------call to action */
 .cta-section{
