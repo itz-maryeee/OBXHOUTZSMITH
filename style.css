@@ -507,7 +507,9 @@
 }
 
 
-
+#who{
+    border: 2px solid salmon;
+}
 
 /* -------------------------------------footer section */
 .footer{
