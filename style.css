@@ -302,9 +302,7 @@
                     height: 3px;
                     width: 100px;
                     background: #368aff;
-                }          
-
-        
+                }                 
 @media screen and (min-width:900px) {
     .about{
     /* border: 2px solid red; */
@@ -341,6 +339,43 @@
                 }
 
 } /*end of media query*/
+
+/* ---------------------------------------- who we are  */
+/* #who{
+    border: 2px solid salmon;
+} */
+.profile{
+    min-height: 500px;
+    background: #EBF4FF;
+    padding-block: 5rem;
+}
+    /* .card-holder{
+        border: 2px solid yellow;
+    } */
+        .card-pic{
+            /* border: 2px solid red; */
+            height: 400px;
+            width: 400px;
+            position: relative;
+
+        }
+        .who-img{
+            height: 100%;
+            width: 100%;
+        }
+            .img-txt-holder{
+                width: 100%;
+                background: rgb(30, 30, 30,.4);
+                position: absolute;
+                bottom: 0;
+            }
+                .name{
+                    line-height: 1;
+                    color: #fff;
+                    text-shadow: 2px 2px 2px #000000;    
+                    padding: 5px 10px;           
+                }
+
 
 
 /* ----------------------------background blue section */
@@ -470,7 +505,7 @@
 
     height: 100%;
     padding: 3rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('/assets/woman-cleaning-the-house.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('/assets/printed-swan.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -490,7 +525,7 @@
     
         height: 380px;
         padding: 5rem;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('/assets/woman-cleaning-the-house.webp');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('/assets/printed-swan.webp');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -507,9 +542,7 @@
 }
 
 
-#who{
-    border: 2px solid salmon;
-}
+
 
 /* -------------------------------------footer section */
 .footer{
