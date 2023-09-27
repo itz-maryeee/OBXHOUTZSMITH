@@ -267,32 +267,22 @@
 
 /* -------------------------------------------About us */
 
-/* .cole{
-    border: 2px solid blue;
-} */
 .about{
     /* border: 2px solid red; */
 
-    height: 100%;
-    padding-block: 2rem;
-    padding-inline: 2rem;
+    min-height: 100%;
+    padding-block: 3rem;
+    padding-inline: 3rem;
     color: #1e1e1e;
     overflow: hidden;
 
     }
-        /* .about-row{
-            border: 2px solid salmon;
-        } */
             .about-col img{
                 /* border: 2px solid rgb(106, 239, 244); */
                
                 width:300px; 
                 height:300px;
             }
-            /* .about-col2{
-                border: 2px solid seagreen;
-            } */
-
                 .about-title{
                     /* border: 2px solid #368aff; */
                     font-size: 34px;
@@ -307,25 +297,18 @@
     .about{
     /* border: 2px solid red; */
 
-    height: 100%;
-    padding-block: 3em;
-    padding-inline: 3rem;
+    min-height: 600px;
+    padding-block: 5rem;
     color: #1e1e1e;
     overflow: hidden;
 
     }
-        /* .about-row{
-            border: 2px solid salmon;
-        } */
             .about-col img{
                 /* border: 2px solid rgb(106, 239, 244); */
                
                 width: 400px; 
                 height:400px;
             }
-            /* .about-col2{
-                border: 2px solid seagreen;
-            } */
 
                 .about-title{
                     /* border: 2px solid #368aff; */
@@ -341,21 +324,19 @@
 } /*end of media query*/
 
 /* ---------------------------------------- who we are  */
-/* #who{
-    border: 2px solid salmon;
-} */
 .profile{
-    min-height: 500px;
+    min-height: 600px;
     background: #EBF4FF;
-    padding-block: 5rem;
+    padding-block: 3rem;
+    padding-inline: 3rem;
 }
     /* .card-holder{
         border: 2px solid yellow;
     } */
         .card-pic{
             /* border: 2px solid red; */
-            height: 400px;
-            width: 400px;
+            height: 350px;
+            width: 350px;
             position: relative;
 
         }
@@ -375,13 +356,52 @@
                     text-shadow: 2px 2px 2px #000000;    
                     padding: 5px 10px;           
                 }
+                .hr-blue{
+                    height: 3px;
+                    width: 100px;
+                    background: #FFDE59;
+                }
 
-
+    @media screen and (min-width:995px) {
+            .profile{
+                min-height: 600px;
+                background: #EBF4FF;
+                        
+            }
+                .card-pic{
+                    /* border: 2px solid red; */
+                        height: 350px;
+                        width: 350px;
+                        position: relative;
+                }
+                    .who-img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                        .img-txt-holder{
+                            width: 100%;
+                            background: rgb(30, 30, 30,.4);
+                            position: absolute;
+                            bottom: 0;
+                        }
+                            .name{
+                                line-height: 1;
+                                color: #fff;
+                                text-shadow: 2px 2px 2px #000000;    
+                                padding: 5px 10px;           
+                            }
+                            .hr-blue{
+                                height: 3px;
+                                width: 100px;
+                                background: #368aff;
+                            }
+    }
 
 /* ----------------------------background blue section */
 .bg-blue{
     height: 100%;
     background-color: #368aff;
+    background-attachment: fixed;
     padding-block: 3rem;
 }
     .txt-white{
@@ -408,6 +428,7 @@
             .bg-blue{
                 height: 500px;
                 background-color: #368aff;
+                background-attachment: fixed;
                 padding-block: 5rem;
             }
             .txt-white{
@@ -473,32 +494,19 @@
                 }
             }
 
-/* ------------------------------------carousel section */
-.carousel-inner{
-    height: 500px;
-    background-color: rgb(26, 105, 216,0.8);
+/* ------------------------------------ Gallery section */
+.gal-holder{
+    border: 2px solid red;
+    padding-block: 5rem;
 }
-    .imgCarousel{
-        height: 500px;
-        width: auto;
-        margin-inline: auto;
-        object-position: center;
-        object-fit: cover;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+    .cont{
+        border: 2px solid red;
     }
-        .carousel-caption{
-            margin-inline: auto;
-        }
-        .carousel-caption p{
-            color: #fff;
-            font-weight: 400;
-            padding: 0;
-        }
-
+    .gal-items{
+        height: 200px;
+        width: auto;
+        background: #E4F0FF;
+    }
 /* -------------------------------------call to action */
 .cta-section{
     /* border: 2px solid red; */
@@ -541,9 +549,6 @@
             } */
 }
 
-
-
-
 /* -------------------------------------footer section */
 .footer{
     height: 100%;
@@ -552,11 +557,9 @@
     padding: 3rem 0.2rem;
     overflow: hidden;
 }
-
 .row-holder{
     padding: 3rem;
 }
-
     .col-items{
         display: inline-flex;
         justify-content: start;
@@ -570,8 +573,6 @@
             .title{
                 font-size: 28px;
             }
-
-
 .blue-bg{
     /* border: 2px solid red; */
 
@@ -582,7 +583,6 @@
     overflow: hidden;
     font-size: 12px;
 }
-
 @media screen and (min-width:996px) {
     .footer{
         height: 100%;
@@ -590,12 +590,8 @@
         background: #E4F0FF;
         padding: 3rem;
         overflow: hidden;
-    }
-    
-    .row-holder{
-        padding: 3rem;
-    }
-    
+    }  
+    .row-holder{padding: 3rem;}
         .col-items{
             display: inline-flex;
             justify-content: start;
@@ -606,9 +602,7 @@
                 font-size: 34px;
                 line-height: 1.2;
             }
-                .title{
-                    font-size: 28px;
-                }
+                .title{font-size: 28px;}
     
     .blue-bg{
         /* border: 2px solid red; */
