@@ -35,9 +35,9 @@
 /* ------------------------------------------- buttons */
  #btn-blue{
     height: 35px;
-    width: 100px;
+    width: fit-content;
     background-color: #368aff;
-    padding: 6px 20px;
+    padding: 6px 10px;
     border-radius: 30px;
     color: #fff;
     font-size: 12px;
@@ -151,8 +151,11 @@
         object-position: center;
     }
     #nav-container{
-        padding: 0 30px 0 30px;
+        padding: 0 10px 0 10px;
     }
+        #navbarContent{
+            width: 280px;
+        }
 
     @media screen and (max-width:768px) {
         .navbar .navbar-toggler{
@@ -305,7 +308,8 @@
     }
             .about-col img{
                 /* border: 2px solid rgb(106, 239, 244); */
-               
+               object-fit: cover;
+               object-position: center;
                 width: 400px; 
                 height:400px;
             }
@@ -330,13 +334,10 @@
     padding-block: 3rem;
     padding-inline: 3rem;
 }
-    /* .card-holder{
-        border: 2px solid yellow;
-    } */
         .card-pic{
             /* border: 2px solid red; */
-            height: 350px;
-            width: 350px;
+            height: 300px;
+            width: 300px;
             position: relative;
 
         }
@@ -346,9 +347,13 @@
         }
             .img-txt-holder{
                 width: 100%;
+                height: 80px;
                 background: rgb(30, 30, 30,.4);
+                overflow: hidden;
                 position: absolute;
                 bottom: 0;
+                transition: all ease-out .3s;
+
             }
                 .name{
                     line-height: 1;
@@ -356,12 +361,27 @@
                     text-shadow: 2px 2px 2px #000000;    
                     padding: 5px 10px;           
                 }
+                .contact-holder a{
+                    text-decoration: none;
+                    color: #1e1e1e;
+                }
+                .contact-holder{
+                    width: fit-content;
+                    text-align: center;
+                    background-color: #FFDE59;
+                    border-radius: 5px;  
+                    padding: 8px 24px; 
+                    margin: 5px 6px 20px;                    
+                }
+                .img-txt-holder:hover {
+                    height: 50%;
+
+                }
                 .hr-blue{
                     height: 3px;
                     width: 100px;
                     background: #FFDE59;
                 }
-
     @media screen and (min-width:995px) {
             .profile{
                 min-height: 600px;
@@ -380,15 +400,36 @@
                     }
                         .img-txt-holder{
                             width: 100%;
+                            height: 100px;
                             background: rgb(30, 30, 30,.4);
+                            overflow: hidden;
                             position: absolute;
                             bottom: 0;
+                            transition: all ease-out .3s;
+
                         }
                             .name{
                                 line-height: 1;
                                 color: #fff;
                                 text-shadow: 2px 2px 2px #000000;    
                                 padding: 5px 10px;           
+                            }
+                                .contact-holder a{
+                                    text-decoration: none;
+                                    color: #1e1e1e;
+                                }
+                                .contact-holder{
+                                    width: fit-content;
+                                    text-align: center;
+                                    background-color: #FFDE59;
+                                    border-radius: 5px;  
+                                    padding: 8px 24px; 
+                                    margin: 5px 11px 10px;                    
+                                }
+            
+                            .img-txt-holder:hover {
+                                height: 45%;
+            
                             }
                             .hr-blue{
                                 height: 3px;
@@ -400,7 +441,7 @@
 /* ----------------------------background blue section */
 .bg-blue{
     height: 100%;
-    background-color: #368aff;
+    background: #368aff;
     background-attachment: fixed;
     padding-block: 3rem;
 }
@@ -412,15 +453,17 @@
         height: 3px;
         width: 100px;
         background: #FFDE59;
+        margin-bottom: 30px;
     }
         .items{
-            height: auto;
+            height: 150px;
             width: 150px;
             /* border: 2px solid red; */
             display: inline-flex;
             justify-content: center;
         }
         .card{
+            height: 150px;
             width: 200px;
             box-shadow: 0 5px 10px rgba(0,0,0,.2);
         }
@@ -439,15 +482,17 @@
                 height: 3px;
                 width: 100px;
                 background: #FFDE59;
+                margin-bottom: 35px;
+
             }
                 .items{
-                    height: auto;
-                    width: auto;
+                    height: 250px;
+                    width: 400px;
                     /* border: 2px solid red; */
                 }
                 .card{
-                    height: auto;
-                    width: auto;
+                    height: 250px;
+                    width: 400px;
                     box-shadow: 0 5px 10px rgba(0,0,0,.2);
                 }
         }
@@ -457,6 +502,15 @@
                 position: relative;
                 object-fit: cover;
                 object-position: center;
+                height:140px;
+                width: 140px;
+            }
+            .card-img-top-1{
+                position: relative;
+                object-fit:cover;
+                object-position: center;
+                height: 100%;
+                width: 100%;
             }
             .img-text{
                 /* border: 2px solid green; */
@@ -475,9 +529,19 @@
             @media screen and (min-width:996px) {
                 .card-img-top{
                     position: relative;
-                    object-fit: cover;
+                    object-fit:cover;
                     object-position: center;
+                    height: 250px;
+                    width: 400px;
                 }
+                .card-img-top-1{
+                    position: relative;
+                    object-fit:cover;
+                    object-position: center;
+                    height: 100%;
+                    width: 100%;
+                }
+
                 .img-text{
                     /* border: 2px solid green; */
             
@@ -493,19 +557,45 @@
                     bottom: -50px;
                 }
             }
-
 /* ------------------------------------ Gallery section */
 .gal-holder{
-    border: 2px solid red;
-    padding-block: 5rem;
+    /* border: 2px solid red; */
+    padding-block: 3rem;
 }
-    .cont{
-        border: 2px solid red;
-    }
+    /* .cont{
+        border: 2px solid salmon;
+    } */
     .gal-items{
         height: 200px;
-        width: auto;
+        width: 200px;
         background: #E4F0FF;
+    }
+        .gal-img{
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+            width: 100%;
+        }
+    @media screen and (min-width:995px) {
+        .gal-holder{
+            /* border: 2px solid red; */
+            height: 100%;
+            padding-block: 5rem;
+        }
+            /* .cont{
+                border: 2px solid red;
+            } */
+            .gal-items{
+                height: 300px;
+                width: 200px;
+                background: #E4F0FF;
+            }
+                .gal-img{
+                    object-fit: cover;
+                    object-position: center;
+                    height: 100%;
+                    width: 100%;
+                }
     }
 /* -------------------------------------call to action */
 .cta-section{
@@ -523,9 +613,6 @@
         /* border: 2px solid salmon; */
         margin-top: 20px;
     }
-        /* .oca-items{
-            border: 2px solid rebeccapurple;
-        } */
 
 @media screen and (min-width:996px) {
     .cta-section{
@@ -548,7 +635,6 @@
                 border: 2px solid rebeccapurple;
             } */
 }
-
 /* -------------------------------------footer section */
 .footer{
     height: 100%;
@@ -579,7 +665,7 @@
     height: 100%;
     color: #1e1e1e;
     background: #368aff;
-    /* padding: 1rem 1rem 1rem 1rem; */
+    padding: 1rem 1rem 1rem 1rem;
     overflow: hidden;
     font-size: 12px;
 }
