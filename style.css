@@ -58,14 +58,14 @@
     font-size: 32px;
     color: #1e1e1e;
 }
+.title-white{
+    font-size: 32px;
+    color: #fff;
+}
 /* call to action */
 .intro-text{
     width: 250px;
     font-size: 28px;
-    color: #fff;
-}
-.title-white{
-    font-size: 20px;
     color: #fff;
 }
 .text-yellow{
@@ -81,7 +81,7 @@
 }
     @media screen and (min-width:996px) {
         .title{
-            font-size: 48px;
+            font-size: 40px;
             color: #1e1e1e;
         }
         .intro-text{
@@ -89,14 +89,15 @@
             font-size: 42px;
             color: #fff;
         }
-        .title-white{
-            font-size: 40px;
-            color: #fff;
-        }
         .text-yellow{
             font-size: 42px;
             color: #FFDE59;
         }
+        .title-white{
+            font-size: 40px;
+            color: #fff;
+        }
+
         .paragraph-body{
             /* border: 2px solid #368aff; */
 
@@ -258,9 +259,7 @@
             } */
     }
 
-
 /* -------------------------------------------About us */
-
 .about{
     /* border: 2px solid red; */
 
@@ -562,7 +561,7 @@
     }
         .gal-img{
             object-fit: cover;
-            object-position: center;
+            object-position: center 40%;
             height: 100%;
             width: 100%;
         }
